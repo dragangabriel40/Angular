@@ -1,0 +1,11 @@
+<br><br>
+<button 
+    class="btn btn-primary"
+    (click)="onToggle()" 
+    >Buton Secret</button>
+<p *ngIf="isDisplayed">Secret Text </p>
+<div *ngFor="let numere of list "
+[ngStyle]="{backgroundColor: numere >= 5 ? 'blue' : 'yellow'}">{{numere}}</div>
+
+
+
